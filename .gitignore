@@ -1,5 +1,7 @@
 .vscode/
-obj/
+*/obj/
 build/
 datasets/
 logs/
+*.a
+*.o
