@@ -3,5 +3,6 @@
 build/
 datasets/
 logs/
+*/lib/
 *.a
 *.o
