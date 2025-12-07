@@ -14,11 +14,16 @@ LIB_NAME = libmatrix.a
 TARGET = $(LIB_DIR)/$(LIB_NAME)
 
 # Source files
-SOURCES = $(wildcard $(SRC_DIR)/*.cpp)
+SOURCES = $(SRC_DIR)/constructors.cpp \
+          $(SRC_DIR)/functions.cpp \
+          $(SRC_DIR)/operations.cpp \
+          $(SRC_DIR)/property.cpp \
+          $(SRC_DIR)/vectorOperations.cpp
+
 OBJECTS = $(SOURCES:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
 
 # Header files
-HEADERS = $(wildcard $(INCLUDE_DIR)/*.hpp)
+HEADERS = $(INCLUDE_DIR)/Matrix.hpp
 
 # Default target
 all: $(TARGET)
