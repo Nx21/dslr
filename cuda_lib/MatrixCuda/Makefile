@@ -12,7 +12,7 @@ OBJ_DIR = obj
 LIB_DIR = lib
 
 # CUDA installation path (adjust if needed)
-CUDA_PATH ?= /usr/local/cuda
+CUDA_PATH ?= /usr/local/cuda-12.0
 CUDA_INC = $(CUDA_PATH)/include
 CUDA_LIB = $(CUDA_PATH)/lib64
 
@@ -21,11 +21,17 @@ LIB_NAME = libmatrixcuda.a
 TARGET = $(LIB_DIR)/$(LIB_NAME)
 
 # Source files
-SOURCES = $(wildcard $(SRC_DIR)/*.cu)
+SOURCES = $(SRC_DIR)/constructors.cu \
+          $(SRC_DIR)/functions.cu \
+          $(SRC_DIR)/kernels.cu \
+          $(SRC_DIR)/operations.cu \
+          $(SRC_DIR)/property.cu \
+          $(SRC_DIR)/vectorOperations.cu
+
 OBJECTS = $(SOURCES:$(SRC_DIR)/%.cu=$(OBJ_DIR)/%.o)
 
 # Header files
-HEADERS = $(wildcard $(INCLUDE_DIR)/*.cuh)
+HEADERS = $(INCLUDE_DIR)/MatrixCuda.cuh
 
 # CUDA libraries
 CUDA_LIBS = -lcudart -lcurand
