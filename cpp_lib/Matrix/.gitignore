@@ -1,0 +1,7 @@
+# Python build artifacts
+*.so
+*.egg-info/
+build/
+.python_built
+__pycache__/
+venv/
