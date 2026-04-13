@@ -13,7 +13,7 @@ This project implements Logistic Regression from scratch in C++ with CUDA accele
 - [x] **Build System**: Makefile-based compilation for all modules
 - [x] **Dataset Integration**: Training and test CSV datasets prepared
 
-### Phase 1: Algorithm Implementation  ⏳ IN PROGRESS
+### Phase 1: Algorithm Implementation  ⏳ IN PROGRESS ([README](cpp_lib/LogisticRegression/README.md))
 - [ ] **Logistic Regression (CPU)**: Core implementation with multiple optimization methods
 - [ ] **Gradient Descent Variants**: Batch, Stochastic, and Mini-Batch implementations
 - [ ] **Cost Functions**: Cross-entropy loss and regularization support
@@ -67,3 +67,7 @@ dslr/
 2. **Unit Testing Framework** - Implement comprehensive tests for all modules
 3. **Documentation** - Generate API docs and usage examples
 4. **Performance Profiling** - Identify and optimize bottlenecks
+
+### Resources
+- Linear Regression Using Normal Equation: https://www.deep-ml.com/problems/14
+- Linear Regression Using Gradient Descent: https://www.deep-ml.com/problems/15
