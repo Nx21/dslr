@@ -6,7 +6,7 @@
 /*   By: nhanafi <nhanafi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/13 22:43:16 by nhanafi           #+#    #+#             */
-/*   Updated: 2026/04/13 23:50:32 by nhanafi          ###   ########.fr       */
+/*   Updated: 2026/04/14 00:05:54 by nhanafi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,15 +21,15 @@
 
 class LinearRegression {
 private:
-    Matrix _coefficients;           // Learned coefficients (weights and bias)
-    double _bias;                   // Intercept term
-    bool _isTrainedBiasSeparately;  // Flag to track bias handling
-    std::vector<double> _trainingLoss;  // Loss history for monitoring
-    
+    Matrix _coefficients;
+    double _bias;
+    bool _isTrainedBiasSeparately;
+    std::vector<double> _trainingLoss;
+
     // Hyperparameters
     double _learningRate;
     size_t _maxIterations;
-    double _regularizationParam;    // Lambda for L2 regularization
+    double _regularizationParam;
     bool _useRegularization;
 
 public:
@@ -64,18 +64,18 @@ public:
     double r2Score(const Matrix& X, const std::vector<double>& y) const;
 
     // Getters
-    Matrix getCoefficients() const { return coefficients; }
-    double getBias() const { return bias; }
-    std::vector<double> getTrainingLoss() const { return trainingLoss; }
-    double getLearningRate() const { return learningRate; }
-    size_t getMaxIterations() const { return maxIterations; }
+    Matrix getCoefficients() const { return _coefficients; }
+    double getBias() const { return _bias; }
+    std::vector<double> getTrainingLoss() const { return _trainingLoss; }
+    double getLearningRate() const { return _learningRate; }
+    size_t getMaxIterations() const { return _maxIterations; }
 
     // Setters
-    void setLearningRate(double lr) { learningRate = lr; }
-    void setMaxIterations(size_t iterations) { maxIterations = iterations; }
+    void setLearningRate(double lr) { _learningRate = lr; }
+    void setMaxIterations(size_t iterations) { _maxIterations = iterations; }
     void setRegularization(double lambda, bool use) {
-        regularizationParam = lambda;
-        useRegularization = use;
+        _regularizationParam = lambda;
+        _useRegularization = use;
     }
 
     // Utility

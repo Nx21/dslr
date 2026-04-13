@@ -6,4 +6,6 @@ logs/
 */lib/
 *.a
 *.o
+*.out
 venv/
+*.so
