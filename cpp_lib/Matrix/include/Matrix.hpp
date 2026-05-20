@@ -46,6 +46,7 @@ public:
     static Matrix zeros(size_t rows, size_t cols);
     static Matrix ones(size_t rows, size_t cols);
     static Matrix identity(size_t size);
+    Matrix inverse() const;
     
     // Vector operations 
     std::vector<double> toVector() const;
