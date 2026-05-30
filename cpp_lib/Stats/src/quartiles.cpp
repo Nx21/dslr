@@ -1,4 +1,4 @@
-#include "../include/Stats.hpp"
+#include "Stats.hpp"
 
 double Stats::quartile(const std::vector<double>& data, int q) {
     if (data.empty()) {

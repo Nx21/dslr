@@ -1,4 +1,4 @@
-#include "../include/Stats.hpp"
+#include "Stats.hpp"
 
 std::vector<double> Stats::normalize(const std::vector<double>& data) {
     if (data.empty()) {

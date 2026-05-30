@@ -1,4 +1,4 @@
-#include "../include/Stats.hpp"
+#include "Stats.hpp"
 
 double Stats::covariance(const std::vector<double>& x, const std::vector<double>& y) {
     if (x.empty() || y.empty()) {

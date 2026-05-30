@@ -1,4 +1,4 @@
-#include "../include/Stats.hpp"
+#include "Stats.hpp"
 
 double Stats::mean(const std::vector<double>& data) {
     if (data.empty()) {
