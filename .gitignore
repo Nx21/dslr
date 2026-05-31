@@ -10,3 +10,4 @@ logs/
 venv/
 *.so
 .python_built
+main-cuda
