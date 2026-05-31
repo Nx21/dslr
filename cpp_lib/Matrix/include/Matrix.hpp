@@ -11,6 +11,9 @@
 #include <cmath>
 #include <algorithm>
 
+// Forward declaration
+class Vector;
+
 class Matrix {
 private:
     size_t rows;
@@ -62,5 +65,6 @@ public:
 // Non-member operators
 Matrix operator*(double scalar, const Matrix& matrix);
 std::ostream& operator<<(std::ostream& os, const Matrix& matrix);
+
 
 #endif

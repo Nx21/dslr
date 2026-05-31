@@ -24,12 +24,13 @@ SOURCES = $(SRC_DIR)/constructors.cpp \
           $(SRC_DIR)/functions.cpp \
           $(SRC_DIR)/operations.cpp \
           $(SRC_DIR)/property.cpp \
-          $(SRC_DIR)/vectorOperations.cpp
+          $(SRC_DIR)/vectorOperations.cpp \
+          $(SRC_DIR)/Vector.cpp
 
 OBJECTS = $(SOURCES:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
 
 # Header files
-HEADERS = $(INCLUDE_DIR)/Matrix.hpp
+HEADERS = $(INCLUDE_DIR)/Matrix.hpp $(INCLUDE_DIR)/Vector.hpp
 
 # Default target: build everything
 all: $(TARGET) python

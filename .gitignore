@@ -9,3 +9,4 @@ logs/
 *.out
 venv/
 *.so
+.python_built
